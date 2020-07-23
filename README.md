@@ -46,6 +46,7 @@ Template for InfPALS Git Advanced Workshop.
 **Step 4.3: Delete branches**
 - if you want to delete the branch A after merging, use `git branch -d <branch A>`
 - if you want to delete the branch A before merging, use `git branch -D <branch A>`
+- if you want to delete a remote branch A on Github, use `git push origin --delete <branch A>`
 
 **Step 5: Create new repository on Github (if you want to work with a team)**
 - to add a local repo that was already created, use `git add remote origin <github_URL>` command
@@ -63,6 +64,7 @@ Template for InfPALS Git Advanced Workshop.
 **Step 8: Merge conflicts**
 - Sometimes when there are changes in one file that conflicts with a change in another file 
   and git can't figure out which version to use, you'll have to manually fix it
+- you can only merge a branch with the one that you created from
 
 
 **Step 9: Get new changes from Github**
