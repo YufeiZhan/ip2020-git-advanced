@@ -69,6 +69,11 @@ Template for InfPALS Git Advanced Workshop.
 
 **Step 9: Get new changes from Github**
 - now, to update the local master branch for new changes, use `git pull origin master`
+- to pull from cpanl, just use `git pull cpanel master`
+
+**Step 9: Stop tracking some files**
+- create a `.gitignore` file and then put the unwanted file names inside
+
 
 --- Possible Errors
 - refusing to merge unrelated histories: https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error#:~:text=historiesgit%20merge-,The%20%E2%80%9Cfatal%3A%20refusing%20to%20merge%20unrelated%20histories%E2%80%9D%20Git%20error,project%20and%2C%20somehow%2C%20the%20
