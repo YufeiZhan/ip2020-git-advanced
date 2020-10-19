@@ -15,6 +15,7 @@ Template for InfPALS Git Advanced Workshop.
   - either write some codes
   - or use touch command to create an empty file
 - to associate a local repo with remote Github repo, use `git remote add origin <URL>`
+- to associate a local repo with remote repo that is originally forked from, use `git remote add upstream <URL>`
 - use `git remote -v` to check the origin
 - to set default remote branch for the current local repo, `git branch --set-upstream <remote-branch>`,
   another shortcut is to use `-u` flag to use `git push -u origin <local-branch>`
@@ -56,8 +57,9 @@ Template for InfPALS Git Advanced Workshop.
   ('origin' here is just shorthand for the remote repository's URL on Github)
 - this allows others to see the changes you made, and if the repo owner approves, this branch will merge with repo's master
 
-**Step 7: Create a pull request (pr)**
-- `git pull origin <branch>`
+**Step 7: Get updated with remote (pr)**
+- use `git fetch <fetch_head>` to first fetch the change to see if you want to do `git merge <fetch_head>` afterwards
+- `git pull origin <branch>` (this is basically a shortcut for `git fetch` and `git merge`
 - this alerts a repo's owners that you want to make some changes to their code, 
   allowing them to review the code before putting changes on the master branch
 
